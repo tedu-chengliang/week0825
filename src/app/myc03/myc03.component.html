@@ -1,0 +1,16 @@
+<button (click)="handleClick()">按钮</button>
+<p>姓名:{{userName}}</p>
+<p>年龄：{{userAge}}</p>
+<a href="{{linkUrl}}">链接</a>
+<img src="../../assets/pic.jpg" title="">
+<img [src]="imgUrl" [title]="title">
+<h3>循环绑定</h3>
+<ul>
+  <ng-container *ngFor="let item of list;let i=index">
+  <li *ngIf="item.age>=18">
+    {{i}}---{{item.ename}}---{{item.age}}
+    --{{item.sex==1 ? '男' : '女'}}
+  </li>
+  </ng-container>
+</ul>
+

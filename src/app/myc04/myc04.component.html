@@ -1,0 +1,24 @@
+<table>
+  <tr *ngFor="let item of list;let i=index" [ngClass]="{
+    'success':item.score>90,
+    'danger':item.score<60
+  }">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+    <td>{{item.score}}</td>
+    <td>
+      <button (click)="del(i)">删除</button>
+    </td>
+  </tr>
+</table>
+
+
+<p *ngIf="bool">myc04 works!</p>
+<ul [ngSwitch]="num">
+  <li *ngSwitchCase="1">冠军</li>
+  <li *ngSwitchCase="2">亚军</li>
+  <li *ngSwitchCase="3">季军</li>
+  <li *ngSwitchDefault>没有名次</li>
+</ul>
+<h3 [ngStyle]="myStyle">这是H3标题</h3>
+<p [ngClass]="myClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet qui non itaque perferendis impedit suscipit. Quibusdam ad blanditiis vel dolore aliquid vero mollitia quis accusantium, enim maxime quo qui ipsam!</p>

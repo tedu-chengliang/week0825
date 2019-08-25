@@ -1,0 +1,24 @@
+.blue{
+  color:blue;
+}
+.hide{
+  display: none;
+}
+.danger{
+  background: red;
+  color:#fff;
+}
+.success{
+  background: lightgreen;
+}
+table{
+  width: 80%;
+  border:1px solid #ccc;
+  border-collapse: collapse;
+}
+td{
+  border:1px solid #ccc;
+}
+td:last-child{
+  text-align: center;
+}
